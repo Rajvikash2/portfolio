@@ -43,8 +43,8 @@ export const Projects = () => {
 
        <div className='border p-5 rounded-lg max-w-sm cursor-pointer flex flex-col gap-4'>
          <div className='flex justify-center w-full'><img src={gvm} width={220} alt='profile' /></div>
-         <h2 className='font-bold'>Google landing page:</h2>
-        <p className='text-gray-400'>A replica of Google home page done using tailwindcss as a start in learning tailwindcss.</p>
+         <h2 className='font-bold'>Password manager:</h2>
+        <p className='text-gray-400'>A simple password vault built using reactTS and Hono JS as backend.</p>
        </div>
 
     </div>
