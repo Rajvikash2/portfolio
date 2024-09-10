@@ -45,7 +45,7 @@ export const Skill = () => {
         <h2>
           I am proficient in building responsive and visually appealing web pages using 
           HTML and CSS. My attention to detail ensures that the user interface is 
-          both functional and aesthetically pleasing.
+          both functional and aesthetically pleasing .
         </h2>
 
         <h2 className='mt-4'>
