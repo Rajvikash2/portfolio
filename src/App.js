@@ -1,7 +1,6 @@
 import './App.css';
-import profile from './components/profile.jpg';
-import profileback from './components/profileback.png';
-import { Header } from './elements/Header';
+
+import Header from './elements/Header';
 import { Projects } from './elements/Projects';
 import { About } from './elements/About';
 import { Skill } from './elements/Skill';
@@ -10,7 +9,7 @@ import { Contact } from './elements/Contact';
 
 function App() {
   return (
-  <div  className=" ml-28 mr-28">
+  <div  className=" ">
   
    <Header />
    <main>

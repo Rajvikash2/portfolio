@@ -34,7 +34,7 @@ export const Skill = () => {
     </div>     
     </div>
     
-    <img src={skills} width={225} alt='' className='size-22 bg-blend-overlay mr-16'/>
+    <img src={skills} width={225} alt='' className='size-22 max-sm:hidden bg-blend-overlay mr-16 shadow-lg custom-shadow'/>
     </div>
 
 

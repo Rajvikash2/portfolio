@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+.custom-shadow {
+   filter: drop-shadow(16px 16px .7px  rgb(221, 17, 54));
+}
