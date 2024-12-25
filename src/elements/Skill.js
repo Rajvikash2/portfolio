@@ -1,60 +1,53 @@
-import React from 'react'
+import React from 'react';
 
-export const Skill = () => {
+export  const Skill = () => {
+  const skills = [
+    { name: 'HTML5', icon: "https://devicon-website.vercel.app/api/html5/plain-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(249,115,22,0.7)]" },
+    { name: 'MongoDB', icon: "https://devicon-website.vercel.app/api/mongodb/original-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(34,197,94,0.7)]" },
+    { name: 'JavaScript', icon: "https://devicon-website.vercel.app/api/javascript/original.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(234,179,8,0.7)]" },
+    { name: 'TypeScript', icon: "https://devicon-website.vercel.app/api/typescript/original.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(59,130,246,0.7)]" },
+    { name: 'Node.js', icon: "https://devicon-website.vercel.app/api/nodejs/original-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(34,197,94,0.7)]" },
+    { name: 'React', icon: "https://devicon-website.vercel.app/api/react/original.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(6,182,212,0.7)]" },
+    { name: 'Next', icon: "https://devicon-website.vercel.app/api/nextjs/original-wordmark.svg?color=%236A6868", glowColor: "hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]" },
+    { name: 'Express', icon: "https://devicon-website.vercel.app/api/express/original-wordmark.svg?color=%23FFFFFF", glowColor: "hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]" },
+    { name: 'TailwindCSS', icon: "https://devicon-website.vercel.app/api/tailwindcss/plain.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(6,182,212,0.7)]" },
+    { name: 'CSS3', icon: "https://devicon-website.vercel.app/api/css3/plain-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(59,130,246,0.7)]" },
+    { name: 'Python', icon: "https://devicon-website.vercel.app/api/python/original-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(234,179,8,0.7)]" },
+    { name: 'Java', icon: "https://devicon-website.vercel.app/api/java/original-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(239,68,68,0.7)]" },
+  ];
+
   return (
-    <div className='container m-auto px-6 py-10'>
-      <h2 className='font-bold text-pink-600 text-4xl mb-8'>Skills</h2>
+    <div className="container m-auto px-6 py-10 bg-black bg-opacity-95">
+      <h2 className="font-bold text-pink-600 text-4xl mb-8">Skills</h2>
       
-      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8'>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/html5/plain-wordmark.svg" className='w-24 h-24 md:w-32 md:h-32' alt='HTML5'/>
-        </div>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/mongodb/original-wordmark.svg" className='w-24 h-24 md:w-32 md:h-32' alt='MongoDB'/>
-        </div>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/javascript/original.svg" className='w-24 h-24 md:w-32 md:h-32' alt='JavaScript'/>
-        </div>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/typescript/original.svg" className='w-24 h-24 md:w-32 md:h-32' alt='TypeScript'/>
-        </div>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/nodejs/original-wordmark.svg" className='w-24 h-24 md:w-32 md:h-32' alt='Node.js'/>
-        </div>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/react/original.svg" className='w-24 h-24 md:w-32 md:h-32' alt='React'/>
-        </div>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/express/original-wordmark.svg?color=%23FFFFFF" className='w-24 h-24 md:w-32 md:h-32 ' alt='Express'/>
-        </div>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/tailwindcss/plain.svg" className='w-24 h-24 md:w-32 md:h-32' alt='TailwindCSS'/>
-        </div>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/css3/plain-wordmark.svg" className='w-24 h-24 md:w-32 md:h-32' alt='CSS3'/>
-        </div>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/python/original-wordmark.svg" className='w-24 h-24 md:w-32 md:h-32' alt='Python'/>
-        </div>
-        <div className='flex flex-col items-center'>
-          <img src="https://devicon-website.vercel.app/api/java/original-wordmark.svg" className='w-24 h-24 md:w-32 md:h-32' alt='Java'/>
-        </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        {skills.map((skill, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <div className={`p-4 rounded-xl transition-all duration-300 hover:scale-110 ${skill.glowColor} hover:shadow-2xl cursor-pointer`}>
+              <img 
+                src={skill.icon} 
+                className="w-24 h-24 md:w-32 md:h-32" 
+                alt={skill.name}
+              />
+            </div>
+          </div>
+        ))}
       </div>
 
-      <div className='text-xl text-gray-400 mt-8 '>
+      <div className="text-xl text-gray-400 mt-8">
         <h2>
-          I am proficient in building responsive and visually appealing web pages using 
-          HTML and CSS. My attention to detail ensures that the user interface is 
-          both functional and aesthetically pleasing .
+          I am proficient in building responsive and visually appealing web pages using
+          HTML and CSS. My attention to detail ensures that the user interface is
+          both functional and aesthetically pleasing.
         </h2>
-
-        <h2 className='mt-4'>
-          With a growing passion for modern web development, I am currently focusing 
-          on mastering React.js. I have hands-on experience in building interactive 
-          and dynamic user interfaces, leveraging the power of React 
+        <h2 className="mt-4">
+          With a growing passion for modern web development, I am currently focusing
+          on mastering React.js. I have hands-on experience in building interactive
+          and dynamic user interfaces, leveraging the power of React
           components and state management.
         </h2>
       </div>
     </div>
-  )
-}
+  );
+};
+
