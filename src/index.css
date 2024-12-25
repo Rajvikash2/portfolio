@@ -1,10 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Neucha&family=Quicksand:wght@300..700&display=swap');
 body {
 /* background-color: rgb(12, 1, 23);   background-color: rgb(12, 1, 23) */
 background-image: url('https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif');
 color : whitesmoke;
+font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 code {
