@@ -41,7 +41,7 @@ export const Projects = () => {
       id: 5,
       image: sp,
       title: 'Fixxy',
-      description: 'A room cpomlaint register app. Created with react. Has a beautiful UI and simple to use',
+      description: 'A room complaint register app. Created with react. Has a beautiful UI and simple to use',
       githubLink: 'https://github.com/FixxyFrontend/UserPage.git'
     },
     {

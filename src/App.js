@@ -17,16 +17,17 @@ function App() {
           <About />
         </section>
 
-        <section id="projects">
-          <Projects />
+        <section id="about-me">
+          <Aboutme />
         </section>
+
 
         <section id="skill-id">
           <Skill />
         </section>
 
-        <section id="about-me">
-          <Aboutme />
+        <section id="projects">
+          <Projects />
         </section>
 
         <section id="contact">

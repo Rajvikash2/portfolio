@@ -17,7 +17,7 @@ export  const Skill = () => {
   ];
 
   return (
-    <div className="container m-auto px-6 py-10 bg-black bg-opacity-95">
+    <div className="container m-auto px-6 py-10 bg-black bg-opacity-65">
       <h2 className="font-bold text-pink-600 text-4xl mb-8">Skills</h2>
       
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">

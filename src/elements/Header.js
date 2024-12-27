@@ -8,7 +8,7 @@ function Header() {
   };
 
   return (
-    <header className="z-50 w-full">
+    <header className="z-50 w-full sticky top-0">
       <div className="box-border px-4 sm:px-16 py-4 sm:py-6 shadow-lg shadow-black w-full bg-black">
         <div className="flex justify-between items-center box-border w-full">
           <div className="box-border max-w-fit">

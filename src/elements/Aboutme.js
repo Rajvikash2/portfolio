@@ -4,7 +4,7 @@ export const Aboutme = () => {
   return (
     <div className='container m-auto px-10 py-10'>
       <h2 className='font-bold text-pink-600 text-4xl mb-12'>About Me</h2>
-      <div className='text-xl text-gray-400 mt-5 flex flex-row max-sm:flex-col justify-around'>
+      <div className='text-xl text-gray-300 mt-5 flex flex-row max-sm:flex-col justify-around'>
         <div>
           <ul>
             <li>Location: Coimbatore, Tamil Nadu</li>
@@ -20,7 +20,7 @@ export const Aboutme = () => {
           </ul>
         </div>
       </div>
-      <div className='text-gray-400 p-10 max-sm:p-0 mt-10 text-2xl'>
+      <div className='text-gray-200 bg-black  p-10 max-sm:p-0 mt-10 text-2xl'>
         <h2>
           As an aspiring Computer Science Engineer at Sri Eshwar College of Engineering,
           I combine strong analytical skills with a passion for innovative technology solutions.
