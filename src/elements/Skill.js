@@ -37,14 +37,16 @@ export  const Skill = () => {
       <div className="text-xl text-gray-400 mt-8">
         <h2>
           I am proficient in building responsive and visually appealing web pages using
-          HTML and CSS. My attention to detail ensures that the user interface is
+          TailwindCSS. My attention to detail ensures that the user interface is
           both functional and aesthetically pleasing.
         </h2>
         <h2 className="mt-4">
-          With a growing passion for modern web development, I am currently focusing
-          on mastering React.js. I have hands-on experience in building interactive
-          and dynamic user interfaces, leveraging the power of React
-          components and state management.
+        With solid experience in modern web development, I have honed my skills in React.js, building interactive 
+        and dynamic user interfaces with efficient state management. Additionally, I have hands-on experience working 
+        with Next.js and have completed a project using it. 
+        While I am more proficient in React, I am actively expanding my expertise in Next.js. 
+        Currently, I am working as a Software Developer Intern, gaining industry experience and 
+        refining my skills in real-world applications.
         </h2>
       </div>
     </div>
