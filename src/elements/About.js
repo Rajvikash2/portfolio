@@ -6,10 +6,10 @@ export const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-around gap-8">
         <div className="text-center md:text-left order-2 md:order-1">
           <h1 className="font-bold text-3xl md:text-4xl">He<i>y</i> , I'm Rajvikash</h1>
-          <h2 className="gradient-text font-bold text-2xl md:text-3xl mt-1 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+          <h2 className="gradient-text font-bold text-2xl md:text-3xl mt-1 bg-gradient-to-r from-gray-200 to-gray-600 text-transparent bg-clip-text">
             Student & fullstack developer
           </h2>
-          <p className="text-gray-400 mt-4 max-w-lg">
+          <p className="text-gray-400 text-lg md:text-xl mt-4 max-w-lg">
             Currently doing my UG in computer science engineering,
             <br className="hidden md:block" /> in Sri Eshwar College of engineering, Coimbatore.
           </p>
