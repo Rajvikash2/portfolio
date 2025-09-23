@@ -23,7 +23,7 @@ export  const Skill = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className={`p-4 rounded-xl transition-all duration-300 hover:scale-110 ${skill.glowColor} hover:shadow-2xl cursor-pointer`}>
+            <div data-aos="flip-left" className={`p-4 rounded-xl transition-all duration-300 hover:scale-110 ${skill.glowColor} hover:shadow-2xl cursor-pointer`}>
               <img 
                 src={skill.icon} 
                 className="w-24 h-24 md:w-32 md:h-32" 
@@ -34,7 +34,7 @@ export  const Skill = () => {
         ))}
       </div>
 
-      <div className="text-xl text-gray-400 mt-8">
+      <div data-aos="fade-right" data-aos-duration="1600" className="text-xl text-gray-400 mt-8">
         <h2>
           I am proficient in building responsive and visually appealing web pages using
           TailwindCSS. My attention to detail ensures that the user interface is

@@ -2,8 +2,8 @@ import React from 'react';
 import profile from '../components/profile.jpg'
 export const About = () => {
   return (
-    <div className="container mx-auto px-4 md:px-10 py-6 md:py-10">
-      <div className="flex flex-col md:flex-row items-center justify-around gap-8">
+    <div className="container h-screen flex flex-col items-center justify-center mx-auto px-4 md:px-10 py-6 md:py-10">
+      <div className="flex flex-col  w-full md:flex-row items-center justify-around gap-8">
         <div className="text-center md:text-left order-2 md:order-1">
           <h1 className="font-bold text-3xl md:text-4xl">He<i>y</i> , I'm Rajvikash</h1>
           <h2 className="gradient-text font-bold text-2xl md:text-3xl mt-1 bg-gradient-to-r from-gray-200 to-gray-600 text-transparent bg-clip-text">
@@ -19,7 +19,7 @@ export const About = () => {
           <img
             src={profile}
             alt="profile"
-            className="rounded-full border-4 border-black shadow-lg shadow-blue-800 w-48 h-48 md:w-72 md:h-72 object-cover"
+            className="rounded-full border-4 border-black shadow-lg shadow-blue-800 w-48 h-48 md:w-[350px] md:h-[350px] object-cover"
           />
         </div>
       </div>

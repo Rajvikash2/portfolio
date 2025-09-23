@@ -62,6 +62,7 @@ export const Projects = () => {
       <div className='grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center relative z-10'>
         {projects.map((project) => (
           <div 
+          data-aos="zoom-in-up"
             key={project.id} 
             className='border border-gray-200/50 p-5 rounded-lg flex flex-col gap-4 
             transform transition-all duration-300 hover:shadow-xl hover:scale-105 
