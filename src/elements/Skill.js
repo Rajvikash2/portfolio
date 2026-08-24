@@ -1,55 +1,359 @@
-import React from 'react';
+import React from "react";
+import Marquee from "react-fast-marquee";
 
-export  const Skill = () => {
-  const skills = [
-    { name: 'HTML5', icon: "https://devicon-website.vercel.app/api/html5/plain-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(249,115,22,0.7)]" },
-    { name: 'MongoDB', icon: "https://devicon-website.vercel.app/api/mongodb/original-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(34,197,94,0.7)]" },
-    { name: 'JavaScript', icon: "https://devicon-website.vercel.app/api/javascript/original.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(234,179,8,0.7)]" },
-    { name: 'TypeScript', icon: "https://devicon-website.vercel.app/api/typescript/original.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(59,130,246,0.7)]" },
-    { name: 'Node.js', icon: "https://devicon-website.vercel.app/api/nodejs/original-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(34,197,94,0.7)]" },
-    { name: 'React', icon: "https://devicon-website.vercel.app/api/react/original.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(6,182,212,0.7)]" },
-    { name: 'Next', icon: "https://devicon-website.vercel.app/api/nextjs/original-wordmark.svg?color=%236A6868", glowColor: "hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]" },
-    { name: 'Express', icon: "https://devicon-website.vercel.app/api/express/original-wordmark.svg?color=%23FFFFFF", glowColor: "hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]" },
-    { name: 'TailwindCSS', icon: "https://devicon-website.vercel.app/api/tailwindcss/plain.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(6,182,212,0.7)]" },
-    { name: 'CSS3', icon: "https://devicon-website.vercel.app/api/css3/plain-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(59,130,246,0.7)]" },
-    { name: 'Python', icon: "https://devicon-website.vercel.app/api/python/original-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(234,179,8,0.7)]" },
-    { name: 'Java', icon: "https://devicon-website.vercel.app/api/java/original-wordmark.svg", glowColor: "hover:drop-shadow-[0_0_25px_rgba(239,68,68,0.7)]" },
-  ];
+const frontendSkills = [
+  {
+    name: "HTML5",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
+    name: "CSS3",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
+  {
+    name: "JavaScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "TypeScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  {
+    name: "React",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    name: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  },
+];
 
+const backendSkills = [
+  {
+    name: "Node.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    name: "Express",
+    icon: "https://devicon-website.vercel.app/api/express/original.svg?color=%23FFFFFF",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    name: "Redis",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+  },
+  {
+    name: "Firebase",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+  },
+  {
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  },
+  {
+    name: "AWS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  },
+  {
+    name: "Nginx",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+  },
+  {
+    name: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  },
+];
+
+const tools = [
+  {
+    name: "Drizzle ORM",
+    icon: "https://cdn.simpleicons.org/drizzle/C5F74F",
+  },
+  {
+    name: "Prisma",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
+  },
+  {
+    name: "Cloudflare",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg",
+  },
+  {
+    name: "Vercel",
+    icon: "https://cdn.simpleicons.org/vercel/FFFFFF",
+  },
+  {
+    name: "Render",
+    icon: "https://cdn.simpleicons.org/render/FFFFFF",
+  },
+];
+
+const SkillCard = ({ skill }) => {
   return (
-    <div className="w-[90%] mx-auto px-6 py-10 bg-black bg-opacity-65">
-      <h2 className="font-bold text-pink-600 text-4xl mb-8">Skills</h2>
-      
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
-        {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div data-aos="flip-left" className={`p-4 rounded-xl transition-all duration-300 hover:scale-110 ${skill.glowColor} hover:shadow-2xl cursor-pointer`}>
-              <img 
-                src={skill.icon} 
-                className="w-24 h-24 md:w-32 md:h-32" 
-                alt={skill.name}
-              />
-            </div>
-          </div>
-        ))}
+    <div
+      className="
+        group
+        flex
+        items-center
+        gap-4
+        min-w-[190px]
+        md:min-w-[220px]
+        mx-3
+        px-5
+        py-4
+        rounded-2xl
+        border
+        border-white/[0.07]
+        bg-white/[0.025]
+        backdrop-blur-md
+        transition-all
+        duration-300
+        hover:border-[#89F336]/40
+        hover:bg-[#89F336]/[0.04]
+        hover:shadow-[0_0_30px_rgba(137,243,54,0.10)]
+      "
+    >
+      <div
+        className="
+          flex
+          items-center
+          justify-center
+          w-11
+          h-11
+          rounded-xl
+          bg-black/60
+          border
+          border-white/[0.06]
+          group-hover:border-[#89F336]/30
+          transition-colors
+        "
+      >
+        <img
+          src={skill.icon}
+          alt={skill.name}
+          className="
+            w-7
+            h-7
+            object-contain
+            transition-transform
+            duration-300
+            group-hover:scale-110
+          "
+          loading="lazy"
+        />
       </div>
 
-      <div data-aos="fade-right" data-aos-duration="1600" className="text-xl text-gray-400 mt-8">
-        <h2>
-          I am proficient in building responsive and visually appealing web pages using
-          TailwindCSS. My attention to detail ensures that the user interface is
-          both functional and aesthetically pleasing.
-        </h2>
-        <h2 className="mt-4">
-        With solid experience in modern web development, I have honed my skills in React.js, building interactive 
-        and dynamic user interfaces with efficient state management. Additionally, I have hands-on experience working 
-        with Next.js and have completed a project using it. 
-        While I am more proficient in React, I am actively expanding my expertise in Next.js. 
-        Currently, I am working as a Software Developer Intern, gaining industry experience and 
-        refining my skills in real-world applications.
-        </h2>
+      <div>
+        <p className="text-white font-medium whitespace-nowrap">
+          {skill.name}
+        </p>
+
+        <p className="text-gray-600 text-xs mt-1">
+          Technology
+        </p>
       </div>
     </div>
   );
 };
 
+const SkillMarquee = ({
+  skills,
+  direction = "left",
+  speed = 45,
+}) => {
+  return (
+    <Marquee
+      direction={direction}
+      speed={speed}
+      autoFill
+      pauseOnHover
+      gradient
+      gradientColor="#000000"
+      gradientWidth={120}
+    >
+      {skills.map((skill) => (
+        <SkillCard
+          key={`${direction}-${skill.name}`}
+          skill={skill}
+        />
+      ))}
+    </Marquee>
+  );
+};
+
+export const Skill = () => {
+  return (
+    <section
+      id="skills"
+      className="
+        relative
+        w-full
+        md:w-[90%]
+        mx-auto
+        px-6
+        md:px-10
+        py-24
+        overflow-hidden
+      "
+    >
+      {/* Ambient glow */}
+
+      <div
+        className="
+          absolute
+          top-1/3
+          left-1/2
+          -translate-x-1/2
+          w-[500px]
+          h-[300px]
+          rounded-full
+          bg-[#89F336]/[0.035]
+          blur-[130px]
+          pointer-events-none
+        "
+      />
+
+      {/* Header */}
+
+      <div
+        data-aos="fade-up"
+        className="relative max-w-4xl mb-14"
+      >
+        <p className="text-[#89F336] text-sm uppercase tracking-[0.4em] mb-4">
+          TECHNOLOGY
+        </p>
+
+        <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+          The stack behind
+          <span className="text-[#89F336]"> what I build.</span>
+        </h2>
+
+        <div className="w-20 h-1 bg-[#89F336] rounded-full mt-6" />
+
+        <p className="text-gray-400 text-lg md:text-xl leading-8 mt-7 max-w-3xl">
+          From interactive interfaces to scalable backend systems and
+          production infrastructure, these are the technologies I work with
+          to turn ideas into reliable software.
+        </p>
+      </div>
+
+      {/* Frontend */}
+
+      <div
+        data-aos="fade-right"
+        data-aos-duration="900"
+        className="mb-7"
+      >
+        <div className="flex items-center gap-3 mb-4 px-2">
+          <span className="w-2 h-2 rounded-full bg-[#89F336]" />
+
+          <span className="text-gray-500 text-xs uppercase tracking-[0.3em]">
+            Frontend Engineering
+          </span>
+        </div>
+
+        <SkillMarquee
+          skills={frontendSkills}
+          direction="left"
+          speed={42}
+        />
+      </div>
+
+      {/* Backend */}
+
+      <div
+        data-aos="fade-left"
+        data-aos-duration="900"
+        className="mb-7"
+      >
+        <div className="flex items-center justify-end gap-3 mb-4 px-2">
+          <span className="text-gray-500 text-xs uppercase tracking-[0.3em]">
+            Backend & Data
+          </span>
+
+          <span className="w-2 h-2 rounded-full bg-[#89F336]" />
+        </div>
+
+        <SkillMarquee
+          skills={backendSkills}
+          direction="right"
+          speed={38}
+        />
+      </div>
+
+      {/* Tools */}
+
+      <div
+        data-aos="fade-right"
+        data-aos-duration="900"
+      >
+        <div className="flex items-center gap-3 mb-4 px-2">
+          <span className="w-2 h-2 rounded-full bg-[#89F336]" />
+
+          <span className="text-gray-500 text-xs uppercase tracking-[0.3em]">
+            Infrastructure & Tools
+          </span>
+        </div>
+
+        <SkillMarquee
+          skills={tools}
+          direction="left"
+          speed={32}
+        />
+      </div>
+
+      {/* Bottom statement */}
+
+      <div
+        data-aos="fade-up"
+        className="
+          relative
+          mt-20
+          flex
+          justify-center
+        "
+      >
+        <div
+          className="
+            flex
+            flex-wrap
+            justify-center
+            items-center
+            gap-3
+            text-center
+          "
+        >
+          <span className="text-gray-500">
+            Building with
+          </span>
+
+          <span className="text-[#89F336] font-medium">
+            modern technologies
+          </span>
+
+          <span className="text-gray-500">
+            for
+          </span>
+
+          <span className="text-white font-medium">
+            production
+          </span>
+        </div>
+      </div>
+    </section>
+  );
+};
